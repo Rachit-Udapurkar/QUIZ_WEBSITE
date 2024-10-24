@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('help')">Help</a></li>
+        </ul>
+    </nav>
+    
+    <div id="home" class="section">
+        <h1>Welcome to the HTML Quiz!</h1>
+        <p>Test your knowledge of HTML concepts and improve your skills.</p>
+        <button onclick="showSection('quiz')">Start Quiz</button>
+    </div>
+
+    <div id="about" class="section" style="display:none;">
+        <h1>About This Quiz</h1>
+        <p>This quiz is designed to help you learn HTML through engaging questions.</p>
+    </div>
+
+    <div id="help" class="section" style="display:none;">
+        <h1>Help</h1>
+        <p>If you need assistance, please reach out to our support team.</p>
+    </div>
+
+    <div id="quiz" class="section" style="display:none;">
+        <h1>Quiz App: HTML Quiz</h1>
+        <div id="quiz-container"></div>
+        <button id="submit">Submit</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
